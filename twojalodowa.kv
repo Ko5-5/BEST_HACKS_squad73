@@ -1,4 +1,20 @@
 #:kivy 1.0.9
+<RV>:
+    viewclass: 'Label'
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10, 10
+    space_x: self.size[0]/3
+
+    RecycleBoxLayout:
+        color: (0, 0.7, 0.4, 0.8)
+        default_size: None, dp(56)
+        default_size_hint: 0.4, None
+        size_hint_y: None
+        height: self.minimum_height
+        orientation: "vertical"
+
+
 <ScreenManagement>:
     StartScreen:
         id:page1
@@ -62,36 +78,30 @@
     GridLayout:
         cols: 1
         rows: 2
-        row_force_default: True
-        row_default_height: 70
         
         GridLayout:
             cols: 3
             rows: 1
             Button:
                 text: 'Listy zakupów'
+                height: 70
                 on_press: root.manager.current = 'ListyZakupow'
 
             Button:
                 text: 'Moja Lodówa'
+                height: 70
                 background_color: (0,1,0,1)
                 on_press: root.manager.current = 'MojaLodowa'
 
             Button:
                 text: 'Przepisy'
+                height: 70
                 on_press: root.manager.current = 'Przepisy'
 
-        ScrollView:
-            size: self.size
-            GridLayout:
-                cols: 1
-                row_default_height: '20dp'
-                row_force_default: True
-                spacing: 0,0
-                padding: 0,0
+        RV:
+            id: recycle_view
+                
 
-                Label:
-                    text: 'Test'
 
 <Przepisy>:
     name: 'Przepisy'

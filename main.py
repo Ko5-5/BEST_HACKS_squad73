@@ -14,6 +14,8 @@ from random import randrange
 from kivy.core.window import Window
 from kivy.uix.textinput import TextInput
 from kivy.uix.scrollview import ScrollView
+from kivy.uix.recycleview import RecycleView
+from kivy.uix.recycleboxlayout import RecycleBoxLayout
 
 ##class Button(Screen):
 class ScreenManagement(ScreenManager):
@@ -45,6 +47,11 @@ class MojaLodowa(Screen):
 
 class Przepisy(Screen):
     pass
+
+class RV(RecycleView):
+    def __init__(self,**kwargs):
+        super(RV,self).__init__(**kwargs)
+        self.data = [{'text':str(x)} for x in range(100)]
 
 
 class TwojaLodowaApp(App):
