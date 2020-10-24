@@ -32,23 +32,29 @@
 <StartScreen>:
     name:'menu'
     
-    GridLayout:
-        cols: 3
-        rows: 1
-        row_force_default: True
-        row_default_height: 70
+    BoxLayout:
+        orientation: 'vertical'
+
+        GridLayout:
+            cols: 3
+            rows: 1
+            size_hint: 1, .1
         
-        Button:
-            text: 'Listy zakupów'
-            on_press: root.manager.current = 'ListyZakupow'
+            Button:
+                text: 'Listy zakupów'
+                on_press: root.manager.current = 'ListyZakupow'
 
-        Button:
-            text: 'Moja Lodówa'
-            on_press: root.manager.current = 'MojaLodowa'
+            Button:
+                text: 'Moja Lodówa'
+                on_press: root.manager.current = 'MojaLodowa'
 
-        Button:
-            text: 'Przepisy'
-            on_press: root.manager.current = 'Przepisy'
+            Button:
+                text: 'Przepisy'
+                on_press: root.manager.current = 'Przepisy'
+
+        Image:
+            source: 'lodowa.png'
+            size_hint: 1, .9
 
 
 <ListyZakupow>:
@@ -112,27 +118,51 @@
 
         RV:
             id: recycle_view
+            size_hint: 1, .9
                 
 
 
 <Przepisy>:
     name: 'Przepisy'
 
-    GridLayout:
-        cols: 3
-        rows: 1
-        row_force_default: True
-        row_default_height: 70
+    BoxLayout:
+        orientation: 'vertical'
+
+        GridLayout:
+            cols: 3
+            rows: 1
+            size_hint: 1, .1
+        
+            Button:
+                text: 'Listy zakupów'
+                on_press: root.manager.current = 'ListyZakupow'
+
+            Button:
+                text: 'Moja Lodówa'
+                on_press: root.manager.current = 'MojaLodowa'
+
+            Button:
+                text: 'Przepisy'
+                background_color: (0,1,0,1)
+                on_press: root.manager.current = 'Przepisy'
+
+        Button:
+            text: 'Śniadanie'
+            size_hint: 1, .225
+            background_color: (0,0.8,0,0.8)
+
+        Button:
+            text: 'Lunch'
+            size_hint: 1, .225
+            background_color: (0,1.1,0,1.1)
         
         Button:
-            text: 'Listy zakupów'
-            on_press: root.manager.current = 'ListyZakupow'
+            text: 'Obiad'
+            size_hint: 1, .225
+            background_color: (0,0.8,0,0.8)
 
         Button:
-            text: 'Moja Lodówa'
-            on_press: root.manager.current = 'MojaLodowa'
-
-        Button:
-            text: 'Przepisy'
-            background_color: (0,1,0,1)
-            on_press: root.manager.current = 'Przepisy'
+            text: 'Kolacja'
+            size_hint: 1, .225
+            background_color: (0,1.1,0,1.1)
+            

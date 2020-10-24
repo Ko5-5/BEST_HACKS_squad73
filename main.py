@@ -16,6 +16,7 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.recycleview import RecycleView
 from kivy.uix.recycleboxlayout import RecycleBoxLayout
+from kivy.uix.image import Image
 
 ##class Button(Screen):
 class ScreenManagement(ScreenManager):
@@ -82,7 +83,7 @@ class RV(RecycleView):
         for x in f:
             lista_zak.append(x)
         f.close()
-        
+
         self.data = [{'text':str(x)} for x in lista_zak]
 
 
