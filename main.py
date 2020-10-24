@@ -15,10 +15,13 @@ class StartScreen(Widget):
 
 class TwojaLodowaApp(App):
     def build(self):
-        layout = GridLayout(cols=3)
-        btn1 = Button(text = 'Listy zakupów', size_hint=(0.5,0.5), font_size='20sp', pos_hint={'center_x':0.1 , 'center_y':0.1})
-        btn2 = Button(text = 'Moja Ladówa', size_hint=(0.5,0.5), font_size='20sp', pos_hint={'center_x':0.1 , 'center_y':0.1})
-        btn3 = Button(text = 'Przepisy', size_hint=(0.5,0.5), font_size='20sp', pos_hint={'center_x':0.1 , 'center_y':0.1})
+        layout = GridLayout(cols=3, row_force_default=True, row_default_height=60)
+        #btn1 = Button(text = 'Listy zakupów', size_hint=(0.5,0.5), font_size='20sp', pos_hint={'center_x':0.1 , 'center_y':0.1})
+        #btn2 = Button(text = 'Moja Ladówa', size_hint=(0.5,0.5), font_size='20sp', pos_hint={'center_x':0.1 , 'center_y':0.1})
+        #btn3 = Button(text = 'Przepisy', size_hint=(0.5,0.5), font_size='20sp', pos_hint={'center_x':0.1 , 'center_y':0.1})
+        btn1 = Button(text = 'Listy zakupów')
+        btn2 = Button(text = 'Moja Ladówa')
+        btn3 = Button(text = 'Przepisy')
         layout.add_widget(btn1)
         layout.add_widget(btn2)
         layout.add_widget(btn3)
