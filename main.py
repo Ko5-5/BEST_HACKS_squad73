@@ -19,7 +19,7 @@ from kivy.uix.recycleboxlayout import RecycleBoxLayout
 from kivy.uix.image import Image
 from kivy.uix.checkbox import CheckBox
 from kivy.uix.label import Label 
-
+import time
 ##class Button(Screen):
 
 class RV(RecycleView):
@@ -38,6 +38,11 @@ class RV(RecycleView):
 class RV2(RecycleView):
     def __init__(self,**kwargs):
         super(RV2,self).__init__(**kwargs)
+        
+        self.event = Clock.schedule_interval(self.read, 1.0/10.0)
+        self.time_start = time.time()
+
+    def read(self, dt):
         f = open("shop_list.txt", "r")
         lista_zak = list(())
         for x in f:
