@@ -76,7 +76,14 @@ class Przepisy(Screen):
 class RV(RecycleView):
     def __init__(self,**kwargs):
         super(RV,self).__init__(**kwargs)
-        self.data = [{'text':str(x)} for x in range(100)]
+
+        f = open("lista.txt", "r")
+        lista_zak = list(())
+        for x in f:
+            lista_zak.append(x)
+        f.close()
+        
+        self.data = [{'text':str(x)} for x in lista_zak]
 
 
 class TwojaLodowaApp(App):

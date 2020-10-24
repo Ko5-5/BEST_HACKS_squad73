@@ -89,27 +89,25 @@
 <MojaLodowa>:
     name: 'MojaLodowa'
 
-    GridLayout:
-        cols: 1
-        rows: 2
+    BoxLayout:
+        orientation: 'vertical'
         
         GridLayout:
             cols: 3
             rows: 1
+            size_hint: 1, .1
+
             Button:
                 text: 'Listy zakupów'
-                height: 70
                 on_press: root.manager.current = 'ListyZakupow'
 
             Button:
                 text: 'Moja Lodówa'
-                height: 70
                 background_color: (0,1,0,1)
                 on_press: root.manager.current = 'MojaLodowa'
 
             Button:
                 text: 'Przepisy'
-                height: 70
                 on_press: root.manager.current = 'Przepisy'
 
         RV:
