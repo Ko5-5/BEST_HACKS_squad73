@@ -94,6 +94,7 @@
 
 <MojaLodowa>:
     name: 'MojaLodowa'
+    on_enter: root.read()
 
     BoxLayout:
         orientation: 'vertical'
@@ -117,7 +118,6 @@
                 on_press: root.manager.current = 'Przepisy'
 
         RV:
-            id: recycle_view
             size_hint: 1, .9
                 
 

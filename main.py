@@ -19,6 +19,19 @@ from kivy.uix.recycleboxlayout import RecycleBoxLayout
 from kivy.uix.image import Image
 
 ##class Button(Screen):
+
+class RV(RecycleView):
+    def __init__(self,**kwargs):
+        super(RV,self).__init__(**kwargs)
+
+        f = open("lista.txt", "r")
+        lista_zak = list(())
+        for x in f:
+            lista_zak.append(x)
+        f.close()
+
+        self.data = [{'text':str(x)} for x in lista_zak]
+
 class ScreenManagement(ScreenManager):
     def __init__(self, **kwargs):
         super(ScreenManagement, self).__init__(**kwargs)
@@ -69,22 +82,18 @@ class DodajProdukt(Screen):
     pass
 
 class MojaLodowa(Screen):
-    pass
-
-class Przepisy(Screen):
-    pass
-
-class RV(RecycleView):
-    def __init__(self,**kwargs):
-        super(RV,self).__init__(**kwargs)
-
+    def read(self):
         f = open("lista.txt", "r")
         lista_zak = list(())
         for x in f:
             lista_zak.append(x)
         f.close()
+        RV.data = [{'text':str(x)} for x in lista_zak]
 
-        self.data = [{'text':str(x)} for x in lista_zak]
+class Przepisy(Screen):
+    pass
+
+
 
 
 class TwojaLodowaApp(App):
