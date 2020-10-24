@@ -40,6 +40,31 @@ class StartScreen(Screen):
         return layout
 
 class ListyZakupow(Screen):
+    shop_list = ListProperty()
+    table = StringProperty()
+    
+    def read(self):
+        '''
+        Reading scores from txt file
+        
+        input file.txt
+        output string(self.table)
+        '''
+        #renew data
+        self.shop_list.clear()
+        self.table = ""
+
+        #new data read from file
+        score_file = open('shop_list.txt','r')
+        self.shop_list = score_file.readlines()
+        
+        
+        for item in self.shop_list[::-1]:
+            self.table += item
+        
+        score_file.close()
+
+class DodajProdukt(Screen):
     pass
 
 class MojaLodowa(Screen):

@@ -50,27 +50,41 @@
             text: 'Przepisy'
             on_press: root.manager.current = 'Przepisy'
 
+
 <ListyZakupow>:
     name: 'ListyZakupow'
+    on_enter: root.read()
 
-    GridLayout:
-        cols: 3
-        rows: 1
-        row_force_default: True
-        row_default_height: 70
-        
-        
-        Button:
-            text: 'Listy zakupów'
-            background_color: (0,1,0,1)
-            on_press: root.manager.current = 'ListyZakupow'
+    BoxLayout:
+        orientation:'vertical'
 
+        GridLayout:
+            cols: 3
+            rows: 1
+            size_hint: 1, .1
+
+            Button:
+                text: 'Listy zakupów'
+                background_color: (0,1,0,1)
+                on_press: root.manager.current = 'ListyZakupow'
+
+            Button:
+                text: 'Moja Lodówa'
+                on_press: root.manager.current = 'MojaLodowa'
+            Button:
+                text: 'Przepisy'
+                on_press: root.manager.current = 'Przepisy'
+
+        ScrollView:
+            size_hint: 1, .8
+            Label:
+                font_size: 35
+                spacing: 20
+                text:root.table
+        
         Button:
-            text: 'Moja Lodówa'
-            on_press: root.manager.current = 'MojaLodowa'
-        Button:
-            text: 'Przepisy'
-            on_press: root.manager.current = 'Przepisy'
+            text:'Dodaj produkt'
+            size_hint: .3, .1
 
 <MojaLodowa>:
     name: 'MojaLodowa'
