@@ -60,24 +60,38 @@
     name: 'MojaLodowa'
 
     GridLayout:
-        cols: 3
-        rows: 1
+        cols: 1
+        rows: 2
         row_force_default: True
         row_default_height: 70
         
-        
-        Button:
-            text: 'Listy zakupów'
-            on_press: root.manager.current = 'ListyZakupow'
+        GridLayout:
+            cols: 3
+            rows: 1
+            Button:
+                text: 'Listy zakupów'
+                on_press: root.manager.current = 'ListyZakupow'
 
-        Button:
-            text: 'Moja Lodówa'
-            background_color: (0,1,0,1)
-            on_press: root.manager.current = 'MojaLodowa'
+            Button:
+                text: 'Moja Lodówa'
+                background_color: (0,1,0,1)
+                on_press: root.manager.current = 'MojaLodowa'
 
-        Button:
-            text: 'Przepisy'
-            on_press: root.manager.current = 'Przepisy'
+            Button:
+                text: 'Przepisy'
+                on_press: root.manager.current = 'Przepisy'
+
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                row_default_height: '20dp'
+                row_force_default: True
+                spacing: 0,0
+                padding: 0,0
+
+                Label:
+                    text: 'Test'
 
 <Przepisy>:
     name: 'Przepisy'
