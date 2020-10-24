@@ -17,6 +17,8 @@ from kivy.uix.scrollview import ScrollView
 from kivy.uix.recycleview import RecycleView
 from kivy.uix.recycleboxlayout import RecycleBoxLayout
 from kivy.uix.image import Image
+from kivy.uix.checkbox import CheckBox
+from kivy.uix.label import Label 
 
 ##class Button(Screen):
 
@@ -43,7 +45,7 @@ class RV2(RecycleView):
         f.close()
         
         self.data = [{'text':str(x)} for x in lista_zak]
-        
+
 class ScreenManagement(ScreenManager):
     def __init__(self, **kwargs):
         super(ScreenManagement, self).__init__(**kwargs)
