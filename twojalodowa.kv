@@ -6,21 +6,18 @@
 <StartScreen>:
     name:'menu'
     GridLayout:
-        cols: 4
-        size_hint: 1, .2
-        pos: 1, 1
-        padding: 50
-        spacing: 20
-        
+        cols: 3
+        rows: 1
+        row_force_default: True
+        row_default_height: 70
         Button:
             text: 'Listy zakupów'
-            
-            font_size: 10
+            font_size: 25
             #on_press: root.manager.current = 'classic_game'
         Button:
             text: 'Moja Ladówa'
-            font_size: 10
+            font_size: 25
         Button:
             text: 'Przepisy'
-            font_size: 10
+            font_size: 25
             #on_press: root.manager.current = 'table_score'
