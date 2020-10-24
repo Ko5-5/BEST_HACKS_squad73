@@ -36,6 +36,15 @@ class StartScreen(Screen):
         layout.add_widget(btn3)
         return layout
 
+class ListyZakupow(Screen):
+    pass
+
+class MojaLodowa(Screen):
+    pass
+
+class Przepisy(Screen):
+    pass
+
 
 class TwojaLodowaApp(App):
     def build(self):

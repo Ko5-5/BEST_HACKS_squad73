@@ -3,21 +3,97 @@
     StartScreen:
         id:page1
 
+    ListyZakupow:
+        id:page2
+
+    MojaLodowa:
+        id:page3
+
+    Przepisy:
+        id:page4    
+    
+
 <StartScreen>:
     name:'menu'
+    
     GridLayout:
         cols: 3
         rows: 1
         row_force_default: True
         row_default_height: 70
+        
         Button:
             text: 'Listy zakupów'
-            font_size: 25
-            #on_press: root.manager.current = 'classic_game'
+            on_press: root.manager.current = 'ListyZakupow'
+
         Button:
-            text: 'Moja Ladówa'
-            font_size: 25
+            text: 'Moja Lodówa'
+            on_press: root.manager.current = 'MojaLodowa'
+
         Button:
             text: 'Przepisy'
-            font_size: 25
-            #on_press: root.manager.current = 'table_score'
+            on_press: root.manager.current = 'Przepisy'
+
+<ListyZakupow>:
+    name: 'ListyZakupow'
+
+    GridLayout:
+        cols: 3
+        rows: 1
+        row_force_default: True
+        row_default_height: 70
+        
+        
+        Button:
+            text: 'Listy zakupów'
+            on_press: root.manager.current = 'ListyZakupow'
+
+        Button:
+            text: 'Moja Lodówa'
+            on_press: root.manager.current = 'MojaLodowa'
+        Button:
+            text: 'Przepisy'
+            on_press: root.manager.current = 'Przepisy'
+
+<MojaLodowa>:
+    name: 'MojaLodowa'
+
+    GridLayout:
+        cols: 3
+        rows: 1
+        row_force_default: True
+        row_default_height: 70
+        
+        
+        Button:
+            text: 'Listy zakupów'
+            on_press: root.manager.current = 'ListyZakupow'
+
+        Button:
+            text: 'Moja Lodówa'
+            on_press: root.manager.current = 'MojaLodowa'
+
+        Button:
+            text: 'Przepisy'
+            on_press: root.manager.current = 'Przepisy'
+
+<Przepisy>:
+    name: 'Przepisy'
+
+    GridLayout:
+        cols: 3
+        rows: 1
+        row_force_default: True
+        row_default_height: 70
+        
+        Button:
+            text: 'Listy zakupów'
+            on_press: root.manager.current = 'ListyZakupow'
+
+        Button:
+            text: 'Moja Lodówa'
+            on_press: root.manager.current = 'MojaLodowa'
+
+        Button:
+            text: 'Przepisy'
+            on_press: root.manager.current = 'Przepisy'
