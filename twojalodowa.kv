@@ -1,0 +1,26 @@
+#:kivy 1.0.9
+<ScreenManagement>:
+    StartScreen:
+        id:page1
+
+<StartScreen>:
+    name:'menu'
+    GridLayout:
+        cols: 4
+        size_hint: 1, .2
+        pos: 1, 1
+        padding: 50
+        spacing: 20
+        
+        Button:
+            text: 'Listy zakupów'
+            
+            font_size: 10
+            #on_press: root.manager.current = 'classic_game'
+        Button:
+            text: 'Moja Ladówa'
+            font_size: 10
+        Button:
+            text: 'Przepisy'
+            font_size: 10
+            #on_press: root.manager.current = 'table_score'
