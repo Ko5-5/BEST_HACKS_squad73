@@ -32,6 +32,18 @@ class RV(RecycleView):
 
         self.data = [{'text':str(x)} for x in lista_zak]
 
+#Scrolled shoplist
+class RV2(RecycleView):
+    def __init__(self,**kwargs):
+        super(RV2,self).__init__(**kwargs)
+        f = open("shop_list.txt", "r")
+        lista_zak = list(())
+        for x in f:
+            lista_zak.append(x)
+        f.close()
+        
+        self.data = [{'text':str(x)} for x in lista_zak]
+        
 class ScreenManagement(ScreenManager):
     def __init__(self, **kwargs):
         super(ScreenManagement, self).__init__(**kwargs)
@@ -79,7 +91,17 @@ class ListyZakupow(Screen):
         score_file.close()
 
 class DodajProdukt(Screen):
-    pass
+    textinput = ObjectProperty(None)
+    score = ObjectProperty(None)
+
+    def new_score(self):
+        score_file = open('shop_list.txt','a')
+        
+        score_file.write(self.textinput.text)
+        score_file.write('\n')
+        score_file.close()
+        
+        self.manager.current = 'ListyZakupow'
 
 class MojaLodowa(Screen):
     def read(self):
