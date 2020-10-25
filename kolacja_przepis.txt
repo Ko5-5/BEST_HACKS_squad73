@@ -2,9 +2,9 @@ Pieczone ziemniaki -> 1
 ziemniaki
 maslo
 #czosne
-Salatka owocowa -> 3
+Salatka owocowa -> 2
 #owoce
-#salata
+salata
 #smietana
 Zapiekanka makaronowa -> 3
 #makaron
@@ -13,10 +13,9 @@ Zapiekanka makaronowa -> 3
 mozarella
 ser
 pomidory
-Zapiekanka makaronowa -> 3
-#makaron
-#szpinak
-#smietana
-mozarella
-ser
+Brushetta -> 3
+#bulka
+#czosnek
 pomidory
+#cebula
+ser

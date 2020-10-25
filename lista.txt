@@ -1,17 +1,17 @@
-szynka
-pomidory
-mozarella
 24.05.2021 - ser
 02.11.2020 - szynka
-ziemniaki
 12.12.2020 - maslo
-bulion
-ryz
-brokul
-kasza
-salata
-fasola
-por
-burak
-jajka
-kielbasa
+22.11.2020 - mozarella
+27.11.2020 - kielbasa
+02.11.2020 - jajka
+12.11.2020 - burak
+01.11.2020 - por
+15.11.2020 - fasola
+15.01.2021 - kasza
+15.05.2021 - ryz
+05.02.2021 - bulion
+30.10.2021 - brokul
+28.10.2021 - salata
+28.11.2021 - ziemniaki
+27.10.2021 - pomidory
+03.11.2021 - szynka
