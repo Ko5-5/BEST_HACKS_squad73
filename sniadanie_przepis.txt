@@ -1,17 +1,20 @@
 Owsianka -> 1
 #platki_owsiane 
+Owsianka -> 1
+#platki_owsiane 
+Jajecznica -> 2
+maslo
+#jajka
+#kielbasa
 Platki z mlekiem -> 2
 #mleko
 #platki
-Jajecznica -> 3
-#maslo
+Pudding -> 3
+#mleko
+#cukier
+#owoce 
+Naleśniki -> 3
+#maka
 #jajka
-#kielbasa
-Jajecznica -> 3
-#maslo
-#jajka
-#kielbasa
-Jajecznica -> 3
-#maslo
-#jajka
-#kielbasa
+#mleko
+maslo

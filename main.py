@@ -56,7 +56,7 @@ def odswiez_sniadanie():
         print(lodowka[-1])
         place = lodowka[-1].find('-')
         if place!=-1:
-            lodowka[-1] = lodowka[-1][place+2:-1]
+            lodowka[-1] = lodowka[-1][place+2:]
         print(lodowka[-1])
 
     for i in range(len(przepisy)):
