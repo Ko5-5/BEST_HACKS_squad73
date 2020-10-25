@@ -1,2 +1,11 @@
 sok
-mięso
+chleb
+maslo
+szynka
+platki_owsiane
+jogurt_naturalny
+majonez
+cukier
+owoce
+boczek
+wieprzowina

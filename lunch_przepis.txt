@@ -1,8 +1,29 @@
-Pieczone ziemniaki -> 2
+Szakszuka -> 2
+pomidory
+#czosnek
+#jajka
+Szakszuka -> 2
+pomidory
+#czosnek
+#jajka
+Frytki warzywne -> 3
 ziemniaki
-#maslo
-#czosne
-Salatka owocowa -> 3
-#owoce
-#salata
-#smietana
+#marchewka
+#pietruszka
+burak
+#cukinia
+Wrap -> 3
+#tortilla
+#mieso_kurczak
+bulion
+#marchewka
+Wrap -> 3
+#tortilla
+#mieso_kurczak
+bulion
+#marchewka
+Wrap -> 3
+#tortilla
+#mieso_kurczak
+bulion
+#marchewka

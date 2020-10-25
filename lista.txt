@@ -1,4 +1,3 @@
-mięso
 szynka
 pomidory
 mozarella
@@ -6,3 +5,13 @@ mozarella
 02.11.2020 - szynka
 ziemniaki
 12.12.2020 - maslo
+bulion
+ryz
+brokul
+kasza
+salata
+fasola
+por
+burak
+jajka
+kielbasa

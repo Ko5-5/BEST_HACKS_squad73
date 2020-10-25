@@ -1,8 +1,33 @@
+<<<<<<< HEAD
+Zapiekanka makaronowa -> 2
+makaron
+#szpinak
+#smietana
+mozarella
+ser
+pomidory
+=======
 Pieczone ziemniaki -> 2
 ziemniaki
 #maslo
 #czosne
+>>>>>>> da7c2194573dc219dc92b0284f98fcb31fc5c1b1
 Salatka owocowa -> 3
 #owoce
 #salata
 #smietana
+<<<<<<< HEAD
+Brushetta -> 3
+#bulka
+#czosnek
+pomidory
+#cebula
+ser
+Brushetta -> 3
+#bulka
+#czosnek
+pomidory
+#cebula
+ser
+=======
+>>>>>>> da7c2194573dc219dc92b0284f98fcb31fc5c1b1
