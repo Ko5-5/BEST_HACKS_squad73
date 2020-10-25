@@ -38,9 +38,9 @@ class RV_Lodowa(RecycleView):
         self.data = [{'text':str(x)} for x in lista]
 
 #Scrolled shoplist
-class RV2(RecycleView):
+class RV_Lista(RecycleView):
     def __init__(self,**kwargs):
-        super(RV2,self).__init__(**kwargs)
+        super(RV_Lista,self).__init__(**kwargs)
         
         self.event = Clock.schedule_interval(self.read, 1.0/10.0)
         self.time_start = time.time()
