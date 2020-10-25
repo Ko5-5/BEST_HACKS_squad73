@@ -1,23 +1,8 @@
-Zapiekanka makaronowa -> 2
-makaron
-#szpinak
-#smietana
-mozarella
-ser
-pomidory
+Pieczone ziemniaki -> 2
+ziemniaki
+#maslo
+#czosne
 Salatka owocowa -> 3
 #owoce
 #salata
 #smietana
-Brushetta -> 3
-#bulka
-#czosnek
-pomidory
-#cebula
-ser
-Brushetta -> 3
-#bulka
-#czosnek
-pomidory
-#cebula
-ser

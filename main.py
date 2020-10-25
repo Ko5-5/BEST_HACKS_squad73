@@ -31,7 +31,7 @@ def odswiez_sniadanie():
             self.skladniki = skladniki or []
             
     ###tworzymy liste z przepisami
-    sniadanie = open("kolacje.txt")
+    sniadanie = open("sniadania.txt")
     przepisy = []
     znacznik = True
     for line in sniadanie:
@@ -98,7 +98,7 @@ def odswiez_lunch():
             self.skladniki = skladniki or []
             
     ###tworzymy liste z przepisami
-    sniadanie = open("kolacje.txt")
+    sniadanie = open("lunche.txt")
     przepisy = []
     znacznik = True
     for line in sniadanie:
@@ -165,7 +165,7 @@ def odswiez_obiad():
             self.skladniki = skladniki or []
             
     ###tworzymy liste z przepisami
-    sniadanie = open("kolacje.txt")
+    sniadanie = open("obiady.txt")
     przepisy = []
     znacznik = True
     for line in sniadanie:

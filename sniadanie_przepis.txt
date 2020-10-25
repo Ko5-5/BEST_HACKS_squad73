@@ -1,8 +1,8 @@
+Pieczone ziemniaki -> 2
+ziemniaki
+#maslo
+#czosne
 Salatka owocowa -> 3
 #owoce
 #salata
 #smietana
-Pieczone ziemniaki -> 3
-#ziemniaki
-#maslo
-#czosne
