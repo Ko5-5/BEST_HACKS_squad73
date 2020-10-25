@@ -1,2 +1,4 @@
-woda
 szynka
+pomidory
+ser
+mozarella

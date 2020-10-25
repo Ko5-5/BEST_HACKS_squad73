@@ -1,0 +1,71 @@
+*
+Sulasz z cukini
+cukinia
+maslo
+cebula
+boczek
+por
+czosnek
+bulion
+papryka
+pomidory
+*
+Salatka owocowa
+owoce
+salata
+smietana
+* 
+Burgery
+ziemniaki
+fasola
+cebula
+cukier
+jogurt
+majonez
+czosnek
+bulki
+* 
+Nugetsy
+mieso_kurczak
+bulki
+jajka
+maslo
+pomidory
+czosnek
+cukier
+* 
+Zapiekanka makaronowa
+makaron
+szpinak
+smietana
+mozarella
+ser
+pomidory
+* 
+Brushetta
+bulka
+czosnek
+pomidory
+cebula
+ser
+*
+Cukinia faszerowana
+cukinia
+cebula
+mielone
+czosnek
+papryka
+pomidory
+*
+Pieczone warzywa
+ziemniaki
+marchewka
+pietruszka
+por
+czosnek
+majonez
+*
+Pieczone ziemniaki
+ziemniaki
+maslo
+czosnek
