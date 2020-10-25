@@ -1,3 +1,25 @@
-test
-test
-test
+Salatka owocowa -> 3
+#owoce
+#salata
+#smietana
+Zapiekanka makaronowa -> 3
+#makaron
+#szpinak
+#smietana
+mozarella
+ser
+pomidory
+Zapiekanka makaronowa -> 3
+#makaron
+#szpinak
+#smietana
+mozarella
+ser
+pomidory
+Zapiekanka makaronowa -> 3
+#makaron
+#szpinak
+#smietana
+mozarella
+ser
+pomidory

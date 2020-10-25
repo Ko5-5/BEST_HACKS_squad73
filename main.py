@@ -90,6 +90,206 @@ def odswiez_sniadanie():
                 wyniki.write("#"+mozliwe_przepisy[i].skladniki[j]+"\n")
     wyniki.close()
 
+def odswiez_lunch():
+    class przepis:
+        def __init__(self,name,skladniki=None):
+            self.name = name
+            self.skladniki = skladniki or []
+            
+    ###tworzymy liste z przepisami
+    sniadanie = open("kolacje.txt")
+    przepisy = []
+    znacznik = True
+    for line in sniadanie:
+        if line[0] != "*":
+            if znacznik == False:
+                przepisy.append(przepis(line[:-1]))
+                znacznik = True
+            else:
+                przepisy[-1].skladniki.append(line[:-1])  
+        else:
+            znacznik = False
+
+    ###sprawdzamy do jakiego przepisu brakuje najmniej skladników
+    lodowka = []
+    braki=[]
+    indeksy=[]
+    mozliwe_przepisy=[]
+
+    fridge = open("lista.txt")
+    for line in fridge:
+        lodowka.append(line[:-1])
+
+    for i in range(len(przepisy)):
+        counter=0
+        for j in range(len(przepisy[i].skladniki)):
+            if not(przepisy[i].skladniki[j] in lodowka):
+                counter+=1
+        braki.append(counter)
+        indeksy.append(counter)
+
+    braki.sort()
+    k=0
+    while True:
+        if braki[k] > 3 or k>len(braki):
+            break
+        else:
+            k+=1
+
+    ###tworzymy listę przepisów najoptymalniejszych
+    kolejna_zmienna_pomocnicza = 0
+    for i in range(k):
+        mozliwe_przepisy.append(przepisy[indeksy.index(braki[i],kolejna_zmienna_pomocnicza+1)])
+        try:
+            if braki[i]==braki[i+1]:
+                kolejna_zmienna_pomocnicza=indeksy.index(braki[i])
+        except: pass
+
+    ###wpierdalamy do pliku
+    wyniki=open("lunch_przepis.txt","w")
+
+    for i in range(len(mozliwe_przepisy)):
+        wyniki.write(mozliwe_przepisy[i].name+" -> "+str(braki[i])+"\n")
+        for j in range(len(mozliwe_przepisy[i].skladniki)):
+            if mozliwe_przepisy[i].skladniki[j] in lodowka:
+                wyniki.write(mozliwe_przepisy[i].skladniki[j]+"\n")
+            else:
+                wyniki.write("#"+mozliwe_przepisy[i].skladniki[j]+"\n")
+    wyniki.close()
+
+def odswiez_obiad():
+    class przepis:
+        def __init__(self,name,skladniki=None):
+            self.name = name
+            self.skladniki = skladniki or []
+            
+    ###tworzymy liste z przepisami
+    sniadanie = open("kolacje.txt")
+    przepisy = []
+    znacznik = True
+    for line in sniadanie:
+        if line[0] != "*":
+            if znacznik == False:
+                przepisy.append(przepis(line[:-1]))
+                znacznik = True
+            else:
+                przepisy[-1].skladniki.append(line[:-1])  
+        else:
+            znacznik = False
+
+    ###sprawdzamy do jakiego przepisu brakuje najmniej skladników
+    lodowka = []
+    braki=[]
+    indeksy=[]
+    mozliwe_przepisy=[]
+
+    fridge = open("lista.txt")
+    for line in fridge:
+        lodowka.append(line[:-1])
+
+    for i in range(len(przepisy)):
+        counter=0
+        for j in range(len(przepisy[i].skladniki)):
+            if not(przepisy[i].skladniki[j] in lodowka):
+                counter+=1
+        braki.append(counter)
+        indeksy.append(counter)
+
+    braki.sort()
+    k=0
+    while True:
+        if braki[k] > 3 or k>len(braki):
+            break
+        else:
+            k+=1
+
+    ###tworzymy listę przepisów najoptymalniejszych
+    kolejna_zmienna_pomocnicza = 0
+    for i in range(k):
+        mozliwe_przepisy.append(przepisy[indeksy.index(braki[i],kolejna_zmienna_pomocnicza+1)])
+        try:
+            if braki[i]==braki[i+1]:
+                kolejna_zmienna_pomocnicza=indeksy.index(braki[i])
+        except: pass
+
+    ###wpierdalamy do pliku
+    wyniki=open("obiad_przepis.txt","w")
+
+    for i in range(len(mozliwe_przepisy)):
+        wyniki.write(mozliwe_przepisy[i].name+" -> "+str(braki[i])+"\n")
+        for j in range(len(mozliwe_przepisy[i].skladniki)):
+            if mozliwe_przepisy[i].skladniki[j] in lodowka:
+                wyniki.write(mozliwe_przepisy[i].skladniki[j]+"\n")
+            else:
+                wyniki.write("#"+mozliwe_przepisy[i].skladniki[j]+"\n")
+    wyniki.close()
+
+def odswiez_kolacja():
+    class przepis:
+        def __init__(self,name,skladniki=None):
+            self.name = name
+            self.skladniki = skladniki or []
+            
+    ###tworzymy liste z przepisami
+    sniadanie = open("kolacje.txt")
+    przepisy = []
+    znacznik = True
+    for line in sniadanie:
+        if line[0] != "*":
+            if znacznik == False:
+                przepisy.append(przepis(line[:-1]))
+                znacznik = True
+            else:
+                przepisy[-1].skladniki.append(line[:-1])  
+        else:
+            znacznik = False
+
+    ###sprawdzamy do jakiego przepisu brakuje najmniej skladników
+    lodowka = []
+    braki=[]
+    indeksy=[]
+    mozliwe_przepisy=[]
+
+    fridge = open("lista.txt")
+    for line in fridge:
+        lodowka.append(line[:-1])
+
+    for i in range(len(przepisy)):
+        counter=0
+        for j in range(len(przepisy[i].skladniki)):
+            if not(przepisy[i].skladniki[j] in lodowka):
+                counter+=1
+        braki.append(counter)
+        indeksy.append(counter)
+
+    braki.sort()
+    k=0
+    while True:
+        if braki[k] > 3 or k>len(braki):
+            break
+        else:
+            k+=1
+
+    ###tworzymy listę przepisów najoptymalniejszych
+    kolejna_zmienna_pomocnicza = 0
+    for i in range(k):
+        mozliwe_przepisy.append(przepisy[indeksy.index(braki[i],kolejna_zmienna_pomocnicza+1)])
+        try:
+            if braki[i]==braki[i+1]:
+                kolejna_zmienna_pomocnicza=indeksy.index(braki[i])
+        except: pass
+
+    ###wpierdalamy do pliku
+    wyniki=open("kolacja_przepis.txt","w")
+
+    for i in range(len(mozliwe_przepisy)):
+        wyniki.write(mozliwe_przepisy[i].name+" -> "+str(braki[i])+"\n")
+        for j in range(len(mozliwe_przepisy[i].skladniki)):
+            if mozliwe_przepisy[i].skladniki[j] in lodowka:
+                wyniki.write(mozliwe_przepisy[i].skladniki[j]+"\n")
+            else:
+                wyniki.write("#"+mozliwe_przepisy[i].skladniki[j]+"\n")
+    wyniki.close()
 
 #CZESC PYTHONOWA - PRZEPISY - KONIEC
 
@@ -290,13 +490,16 @@ class Sniadanie(Screen):
 
 
 class Lunch(Screen):
-    pass
+    def odswiez(self):
+        odswiez_lunch()
 
 class Obiad(Screen):
-    pass
+    def odswiez(self):
+        odswiez_obiad()
 
 class Kolacja(Screen):
-    pass
+    def odswiez(self):
+        odswiez_kolacja()
 
 class TwojaLodowaApp(App):
     def build(self):
