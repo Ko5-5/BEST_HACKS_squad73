@@ -25,14 +25,16 @@ import time
 class RV(RecycleView):
     def __init__(self,**kwargs):
         super(RV,self).__init__(**kwargs)
+        self.event = Clock.schedule_interval(self.read, 1.0/10.0)
+        self.time_start = time.time()
 
+    def read(self, dt):
         f = open("lista.txt", "r")
-        lista_zak = list(())
+        lista = list(())
         for x in f:
-            lista_zak.append(x)
+            lista.append(x)
         f.close()
-
-        self.data = [{'text':str(x)} for x in lista_zak]
+        self.data = [{'text':str(x)} for x in lista]
 
 #Scrolled shoplist
 class RV2(RecycleView):
@@ -111,13 +113,7 @@ class DodajProdukt(Screen):
         self.manager.current = 'ListyZakupow'
 
 class MojaLodowa(Screen):
-    def read(self):
-        f = open("lista.txt", "r")
-        lista_zak = list(())
-        for x in f:
-            lista_zak.append(x)
-        f.close()
-        RV.data = [{'text':str(x)} for x in lista_zak]
+    pass
 
 class Przepisy(Screen):
     pass
