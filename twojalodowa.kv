@@ -1,5 +1,5 @@
 #:kivy 1.0.9
-<RV>:
+<RV_Lodowa>:
     viewclass: 'Label'
     orientation: 'vertical'
     spacing: 10
@@ -29,6 +29,66 @@
         height: self.minimum_height
         orientation: "vertical"
 
+<RV_Sniadanie>:
+    viewclass: 'Label'
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10, 10
+    space_x: self.size[0]/3
+
+    RecycleBoxLayout:
+        color: (0, 0.7, 0.4, 0.8)
+        default_size: None, dp(56)
+        default_size_hint: 0.4, None
+        size_hint_y: None
+        height: self.minimum_height
+        orientation: "vertical"
+
+<RV_Lunch>:
+    viewclass: 'Label'
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10, 10
+    space_x: self.size[0]/3
+
+    RecycleBoxLayout:
+        color: (0, 0.7, 0.4, 0.8)
+        default_size: None, dp(56)
+        default_size_hint: 0.4, None
+        size_hint_y: None
+        height: self.minimum_height
+        orientation: "vertical"
+
+<RV_Obiad>:
+    viewclass: 'Label'
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10, 10
+    space_x: self.size[0]/3
+
+    RecycleBoxLayout:
+        color: (0, 0.7, 0.4, 0.8)
+        default_size: None, dp(56)
+        default_size_hint: 0.4, None
+        size_hint_y: None
+        height: self.minimum_height
+        orientation: "vertical"
+
+<RV_Kolacja>:
+    viewclass: 'Label'
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10, 10
+    space_x: self.size[0]/3
+
+    RecycleBoxLayout:
+        color: (0, 0.7, 0.4, 0.8)
+        default_size: None, dp(56)
+        default_size_hint: 0.4, None
+        size_hint_y: None
+        height: self.minimum_height
+        orientation: "vertical"
+
 <ScreenManagement>:
     StartScreen:
         id:page1
@@ -43,6 +103,21 @@
 
     Przepisy:
         id:page4     
+
+    Sniadanie:
+        id:page5
+
+    Lunch:
+        id:page6
+
+    Obiad:
+        id:page7
+
+    Kolacja:
+        id:page8
+
+
+
     
 
 <StartScreen>:
@@ -151,7 +226,7 @@
                 text: 'Przepisy'
                 on_press: root.manager.current = 'Przepisy'
 
-        RV:
+        RV_Lodowa:
             size_hint: 1, .9
                 
 
@@ -184,19 +259,85 @@
             text: 'Śniadanie'
             size_hint: 1, .225
             background_color: (0,0.8,0,0.8)
+            on_press: root.manager.current = 'Sniadanie'
 
         Button:
             text: 'Lunch'
             size_hint: 1, .225
             background_color: (0,1.1,0,1.1)
+            on_press: root.manager.current = 'Lunch'
         
         Button:
             text: 'Obiad'
             size_hint: 1, .225
             background_color: (0,0.8,0,0.8)
+            on_press: root.manager.current = 'Obiad'
 
         Button:
             text: 'Kolacja'
             size_hint: 1, .225
             background_color: (0,1.1,0,1.1)
-            
+            on_press: root.manager.current = 'Kolacja'
+
+
+<Sniadanie>:
+    name: 'Sniadanie'
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        Button: 
+            text: 'Wyjdź'
+            size_hint: 1, .1
+            on_press: root.manager.current = 'Przepisy'
+
+        RV_Sniadanie:
+            size_hint: 1, .9
+
+        
+
+
+<Lunch>:
+    name: 'Lunch'
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        Button: 
+            text: 'Wyjdź'
+            size_hint: 1, .1
+            on_press: root.manager.current = 'Przepisy'
+
+        RV_Lunch:
+            size_hint: 1, .9
+
+
+<Obiad>:
+    name: 'Obiad'
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        Button: 
+            text: 'Wyjdź'
+            size_hint: 1, .1
+            on_press: root.manager.current = 'Przepisy'
+
+        RV_Obiad:
+            size_hint: 1, .9
+
+
+
+<Kolacja>:
+    name: 'Kolacja'
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        Button: 
+            text: 'Wyjdź'
+            size_hint: 1, .1
+            on_press: root.manager.current = 'Przepisy' 
+
+        RV_Kolacja:
+            size_hint: 1, .9
