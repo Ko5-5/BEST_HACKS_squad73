@@ -1,8 +1,17 @@
-Pieczone ziemniaki -> 2
-ziemniaki
+Owsianka -> 1
+#platki_owsiane 
+Platki z mlekiem -> 2
+#mleko
+#platki
+Jajecznica -> 3
 #maslo
-#czosne
-Salatka owocowa -> 3
-#owoce
-#salata
-#smietana
+#jajka
+#kielbasa
+Jajecznica -> 3
+#maslo
+#jajka
+#kielbasa
+Jajecznica -> 3
+#maslo
+#jajka
+#kielbasa
