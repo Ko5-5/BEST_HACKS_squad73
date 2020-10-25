@@ -1,15 +1,23 @@
-Schab z pomidorami -> 2
-#wieprzowina
-pomidory
-#maka
-Polędwiczki wieprzowe z mozzarellą -> 3
-#wieprzowina
-#czosnek
+Zapiekanka makaronowa -> 2
+makaron
+#szpinak
+#smietana
 mozarella
-szynka
-#maslo
+ser
 pomidory
-Kotlety z jajek -> 3
-#jajka
-#maslo
-#bulka_tarta
+Salatka owocowa -> 3
+#owoce
+#salata
+#smietana
+Brushetta -> 3
+#bulka
+#czosnek
+pomidory
+#cebula
+ser
+Brushetta -> 3
+#bulka
+#czosnek
+pomidory
+#cebula
+ser

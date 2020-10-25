@@ -1,16 +1,8 @@
-Owsianka -> 1
-#platki_owsiane 
-Platki z mlekiem -> 2
-#mleko
-#platki
-Platki z mlekiem -> 2
-#mleko
-#platki
-Jajecznica -> 3
+Salatka owocowa -> 3
+#owoce
+#salata
+#smietana
+Pieczone ziemniaki -> 3
+#ziemniaki
 #maslo
-#jajka
-#kielbasa
-Pudding -> 3
-#mleko
-#cukier
-#owoce 
+#czosne

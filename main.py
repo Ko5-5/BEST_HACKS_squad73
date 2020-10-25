@@ -21,6 +21,7 @@ from kivy.uix.checkbox import CheckBox
 from kivy.uix.label import Label 
 from kivy.uix.spinner import Spinner
 import time
+from datetime import datetime 
 
 #CZESC PYTHONOWA - PRZEPISY - POCZATEK
 def odswiez_sniadanie():
@@ -30,7 +31,7 @@ def odswiez_sniadanie():
             self.skladniki = skladniki or []
             
     ###tworzymy liste z przepisami
-    sniadanie = open("sniadania.txt")
+    sniadanie = open("kolacje.txt")
     przepisy = []
     znacznik = True
     for line in sniadanie:
@@ -97,7 +98,7 @@ def odswiez_lunch():
             self.skladniki = skladniki or []
             
     ###tworzymy liste z przepisami
-    sniadanie = open("lunche.txt")
+    sniadanie = open("kolacje.txt")
     przepisy = []
     znacznik = True
     for line in sniadanie:
@@ -164,7 +165,7 @@ def odswiez_obiad():
             self.skladniki = skladniki or []
             
     ###tworzymy liste z przepisami
-    sniadanie = open("obiady.txt")
+    sniadanie = open("kolacje.txt")
     przepisy = []
     znacznik = True
     for line in sniadanie:
@@ -305,7 +306,9 @@ class RV_Lodowa(RecycleView):
         for x in f:
             lista.append(x)
         f.close()
-        self.data = [{'text':str(x)} for x in lista]
+        x =  [{'text':str(x)} for x in lista]
+        #x.sort(key=lambda date: datetime.strptime(date, "%d-%m-%y"))
+        self.data = x
 
 #Scrolled shoplist
 class RV_Lista(RecycleView):
@@ -480,6 +483,28 @@ class MojaLodowa(Screen):
             for item in self.fridge_list:
                 f.write("%s" % item)
 
+    def data(self, value):
+        global lll
+        lll = value
+        self.fridge_list.remove(value)
+        with open('lista.txt', 'w') as f:
+            for item in self.fridge_list:
+                f.write("%s" % item)
+
+        self.manager.current = 'DataPrzydatnosci'
+
+class DataPrzydatnosci(Screen):
+    textinput = ObjectProperty(None)
+    score = ObjectProperty(None)
+    
+
+    def new_score(self):
+        global lll 
+        
+        with open('lista.txt', 'a') as f:
+            f.write(self.textinput.text+' - '+lll)
+
+        self.manager.current = 'MojaLodowa'
 
 class Przepisy(Screen):
     pass
