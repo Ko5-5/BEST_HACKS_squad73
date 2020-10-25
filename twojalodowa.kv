@@ -2,11 +2,14 @@
 <RV_Lodowa>:
     viewclass: 'Label'
     orientation: 'vertical'
-    spacing: 5
-    padding: 5, 5
+    spacing: 10
+    padding: 10, 10
+    space_x: self.size[0]/3
+
     RecycleBoxLayout:
         color: (0, 0.7, 0.4, 0.8)
-        default_size_hint: 1, None
+        default_size: None, dp(56)
+        default_size_hint: 0.4, None
         size_hint_y: None
         height: self.minimum_height
         orientation: "vertical"
@@ -168,7 +171,7 @@
                 text: 'Przepisy'
                 on_press: root.manager.current = 'Przepisy'
 
-        RV2:
+        RV_Lista:
             size_hint: 1, .8
             id: recycle_view2
         
@@ -215,6 +218,8 @@
             Button:
                 text: "Anuluj"
                 on_press: root.manager.current = 'ListyZakupow'
+
+
 
 <MojaLodowa>:
     name: 'MojaLodowa'

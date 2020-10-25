@@ -118,22 +118,6 @@ class RV_Kolacja(RecycleView):
         
         self.data = [{'text':str(x)} for x in lista_zak]
 
-#Scrolled shoplist
-class RV2(RecycleView):
-    def __init__(self,**kwargs):
-        super(RV2,self).__init__(**kwargs)
-        
-        self.event = Clock.schedule_interval(self.read, 1.0/10.0)
-        self.time_start = time.time()
-
-    def read(self, dt):
-        f = open("shop_list.txt", "r")
-        lista_zak = list(())
-        for x in f:
-            lista_zak.append(x)
-        f.close()
-        
-        self.data = [{'text':str(x)} for x in lista_zak]
 
 class ScreenManagement(ScreenManager):
     def __init__(self, **kwargs):
@@ -170,13 +154,16 @@ class ListyZakupow(Screen):
 
     def kup(self, value):
         '''
-        Usuwa produkt z listy shop_list
+        Usuwa produkt z listy shop_list i przenosi do listy lodowa
         '''
         self.shop_list.remove(value)
-        
+        print(self.shop_list)
         with open('shop_list.txt', 'w') as f:
             for item in self.shop_list:
-                f.write("%s\n" % item)
+                f.write("%s" % item)
+
+        with open('lista.txt', 'a') as f:
+            f.write("%s" % value)
 
 
 class DodajProdukt(Screen):
@@ -192,7 +179,7 @@ class DodajProdukt(Screen):
         
         self.manager.current = 'ListyZakupow'
 
-class Kupilem(Screen):
+class DataPrzydatnosci(Screen):
     pass
 
 class MojaLodowa(Screen):
