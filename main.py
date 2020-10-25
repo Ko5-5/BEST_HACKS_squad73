@@ -157,7 +157,6 @@ class ListyZakupow(Screen):
         Usuwa produkt z listy shop_list i przenosi do listy lodowa
         '''
         self.shop_list.remove(value)
-        print(self.shop_list)
         with open('shop_list.txt', 'w') as f:
             for item in self.shop_list:
                 f.write("%s" % item)
@@ -179,11 +178,38 @@ class DodajProdukt(Screen):
         
         self.manager.current = 'ListyZakupow'
 
-class DataPrzydatnosci(Screen):
-    pass
-
 class MojaLodowa(Screen):
-    pass
+    fridge_list = ListProperty()
+    table = StringProperty()
+    value = StringProperty()
+
+    def read(self):
+        '''
+        Reading scores from txt file
+        
+        input file.txt
+        output string(self.table)
+        '''
+        #renew data
+        self.fridge_list.clear()
+        self.table = ""
+
+        #new data read from file
+        score_file = open('lista.txt','r')
+        self.fridge_list = score_file.readlines()
+        
+        
+        for item in self.fridge_list[::-1]:
+            self.table += item
+        
+        score_file.close()
+
+    def zjedzone(self, value):
+        self.fridge_list.remove(value)
+        with open('lista.txt', 'w') as f:
+            for item in self.fridge_list:
+                f.write("%s" % item)
+
 
 class Przepisy(Screen):
     pass
