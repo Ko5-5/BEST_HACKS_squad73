@@ -19,6 +19,7 @@ from kivy.uix.recycleboxlayout import RecycleBoxLayout
 from kivy.uix.image import Image
 from kivy.uix.checkbox import CheckBox
 from kivy.uix.label import Label 
+from kivy.uix.spinner import Spinner
 import time
 ##class Button(Screen):
 
@@ -117,6 +118,23 @@ class RV_Kolacja(RecycleView):
         
         self.data = [{'text':str(x)} for x in lista_zak]
 
+#Scrolled shoplist
+class RV2(RecycleView):
+    def __init__(self,**kwargs):
+        super(RV2,self).__init__(**kwargs)
+        
+        self.event = Clock.schedule_interval(self.read, 1.0/10.0)
+        self.time_start = time.time()
+
+    def read(self, dt):
+        f = open("shop_list.txt", "r")
+        lista_zak = list(())
+        for x in f:
+            lista_zak.append(x)
+        f.close()
+        
+        self.data = [{'text':str(x)} for x in lista_zak]
+
 class ScreenManagement(ScreenManager):
     def __init__(self, **kwargs):
         super(ScreenManagement, self).__init__(**kwargs)
@@ -127,6 +145,7 @@ class StartScreen(Screen):
 class ListyZakupow(Screen):
     shop_list = ListProperty()
     table = StringProperty()
+    value = StringProperty()
     
     def read(self):
         '''
@@ -149,6 +168,17 @@ class ListyZakupow(Screen):
         
         score_file.close()
 
+    def kup(self, value):
+        '''
+        Usuwa produkt z listy shop_list
+        '''
+        self.shop_list.remove(value)
+        
+        with open('shop_list.txt', 'w') as f:
+            for item in self.shop_list:
+                f.write("%s\n" % item)
+
+
 class DodajProdukt(Screen):
     textinput = ObjectProperty(None)
     score = ObjectProperty(None)
@@ -161,6 +191,9 @@ class DodajProdukt(Screen):
         score_file.close()
         
         self.manager.current = 'ListyZakupow'
+
+class Kupilem(Screen):
+    pass
 
 class MojaLodowa(Screen):
     pass

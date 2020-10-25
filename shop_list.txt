@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======
 ogórek
 pomidor
 sa
@@ -7,3 +27,4 @@ pra
 kuba jest zajebisty
 kuba ssie
 1
+>>>>>>> 5350aaeaa4a181a912119de6b97c8d6c393b23ec
