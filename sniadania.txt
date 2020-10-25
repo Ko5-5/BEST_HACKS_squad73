@@ -1,0 +1,44 @@
+*
+Kanapki
+chleb
+maslo
+szynka
+ser
+* 
+Jajecznica
+maslo
+jajka
+kielbasa
+*
+Owsianka
+platki_owsiane 
+*
+Platki z mlekiem
+mleko
+platki
+* 
+Jogurtowe placki z owocami
+jogurt_naturalny
+jajka
+cukier
+maka
+proszek_do_pieczenia
+owoce
+* 
+Pudding
+mleko
+cukier
+owoce 
+*
+Koktail owocowy
+owoce
+platki_owsiane
+cukier
+mleko
+*
+Naleśniki
+maka
+jajka
+mleko
+maslo
+* 

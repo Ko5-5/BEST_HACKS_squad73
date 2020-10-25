@@ -1,0 +1,172 @@
+*
+Pulpeciki koreańskie
+mielone
+bulka
+jajka
+maka
+bulion
+ryz
+*
+Żeberka w piwie
+maka
+cebula
+czosnek
+por
+piwo
+zeberka
+*
+Gulasz węgierski
+mieso_kurczka
+czosnek
+maka
+cebula
+papryka
+bulion
+pomidory
+* 
+Zapiekane ziemniaki
+ziemniaki
+mięso_kurczak
+czosnek
+marchewka
+ziemniaki
+maslo
+*
+Mielone
+mielone
+bulka
+mleko
+cebula
+jajko
+*
+Schab z pomidorami
+wieprzowina
+pomidory
+maka
+*
+Zapiekane naleśniki
+maka
+jajka
+mleko
+maslo
+ser
+cebula
+czosnek
+mielone
+bulion
+fasola
+kukurydza
+pomidory
+* 
+Naleśniki z kurczakiem
+maka
+jajka
+mleko
+maslo
+szpinak
+mieso_kurczak
+ser
+pomidory
+czosnek
+* 
+Kluski śląskie
+ziemniaki
+jajko
+grzyby
+boczek
+maslo
+cebula
+smietana
+*
+Pulpeciki z pieczarkami
+grzyby
+mielone
+cebula
+czosnek
+jajko
+bulion
+maka
+*
+Polędwiczki wieprzowe z mozzarellą
+wieprzowina
+czosnek
+mozarella
+szynka
+maslo
+pomidory
+*
+Kotlety
+wieprzowina
+mleko
+jajka
+maka
+maslo
+bulka_tarta
+*
+Kotlety z pieczarkami
+grzyby
+cebule
+maslo
+wieprzowina
+bulka_tarta
+*
+Kotlety z jajek
+jajka
+maslo
+bulka_tarta
+*
+Gulasz  wieprzowy
+cebula
+czosnek
+wieprzowina
+boczek
+maslo
+bulion
+marchewka
+grzyby
+pomidory
+maka
+Spagetti bolonese
+wieprzowina
+cebula
+czosnek
+marchewka
+pomidory
+makaron
+ser
+*
+Roladki z kurczaka
+mieso_kurczak
+boczek
+grzyby
+cebula
+maslo
+ser
+cukinia
+*
+Pieczony kurczak
+mieso_kurczak
+cebula
+czeosnek
+grzyby
+fasola
+pomidory
+*
+Chłopski garnek
+cebula
+boczek
+kiełbasa
+ziemniaki
+papryka
+cukinia
+pomidory
+*
+Cukinie faszerowane
+cukinie
+mielone
+cebula
+czosnek
+fasola
+kukurydza
+pomidory
+mozzarella

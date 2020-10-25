@@ -1,25 +1,15 @@
-Salatka owocowa -> 3
-#owoce
-#salata
-#smietana
-Zapiekanka makaronowa -> 3
-#makaron
-#szpinak
-#smietana
-mozarella
-ser
+Schab z pomidorami -> 2
+#wieprzowina
 pomidory
-Zapiekanka makaronowa -> 3
-#makaron
-#szpinak
-#smietana
+#maka
+Polędwiczki wieprzowe z mozzarellą -> 3
+#wieprzowina
+#czosnek
 mozarella
-ser
+szynka
+#maslo
 pomidory
-Zapiekanka makaronowa -> 3
-#makaron
-#szpinak
-#smietana
-mozarella
-ser
-pomidory
+Kotlety z jajek -> 3
+#jajka
+#maslo
+#bulka_tarta

@@ -1,25 +1,16 @@
-Salatka owocowa -> 3
-#owoce
-#salata
-#smietana
-Zapiekanka makaronowa -> 3
-#makaron
-#szpinak
-#smietana
-mozarella
-ser
-pomidory
-Zapiekanka makaronowa -> 3
-#makaron
-#szpinak
-#smietana
-mozarella
-ser
-pomidory
-Zapiekanka makaronowa -> 3
-#makaron
-#szpinak
-#smietana
-mozarella
-ser
-pomidory
+Owsianka -> 1
+#platki_owsiane 
+Platki z mlekiem -> 2
+#mleko
+#platki
+Platki z mlekiem -> 2
+#mleko
+#platki
+Jajecznica -> 3
+#maslo
+#jajka
+#kielbasa
+Pudding -> 3
+#mleko
+#cukier
+#owoce 
